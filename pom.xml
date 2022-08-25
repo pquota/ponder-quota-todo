@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.7.3</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>io.github.pquota</groupId>
+  <artifactId>ponder-quota-todo</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>ponder-quota-todo</name>
+  <description>the todo-list business center of Ponder Quota</description>
+  <inceptionYear>2022</inceptionYear>
+  <url>https://io.github.pquota</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>pquota</name>
+    <url>https://github.com/pquota</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>ponderyao</name>
+      <url>https://github.com/ponderyao</url>
+      <email>ponderyao@gmail.com</email>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>ponder-quota-todo-application</module>
+    <module>ponder-quota-todo-common</module>
+    <module>ponder-quota-todo-domain</module>
+    <module>ponder-quota-todo-infrastructure</module>
+    <module>ponder-quota-todo-interface</module>
+    <module>ponder-quota-todo-starter</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <spring-boot.version>2.7.3</spring-boot.version>
+    <ddd.version>1.1.0</ddd.version>
+    <lombok.version>1.18.24</lombok.version>
+    <junit.version>4.11</junit.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Domain Driven Design -->
+      <dependency>
+        <groupId>io.github.ponderyao</groupId>
+        <artifactId>domain-driven-design-framework</artifactId>
+        <version>${ddd.version}</version>
+      </dependency>
+      <!-- Spring Framework -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <!-- Development Tool -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <optional>true</optional>
+        <version>${lombok.version}</version>
+      </dependency>
+      <!-- Test Tool -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot.version}</version>
+          <configuration>
+            <skip>true</skip>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
