@@ -16,6 +16,20 @@
     <description>the application service module of the todo-list business center</description>
 
     <dependencies>
+        <!-- Project Modules -->
+        <dependency>
+            <groupId>io.github.pquota</groupId>
+            <artifactId>ponder-quota-todo-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.pquota</groupId>
+            <artifactId>ponder-quota-todo-interface</artifactId>
+        </dependency>
+        <!-- Spring Framework -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -88,6 +88,38 @@
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
+
+      <!-- Project Modules Version Control -->
+      <dependency>
+        <groupId>io.github.pquota</groupId>
+        <artifactId>ponder-quota-todo-application</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.pquota</groupId>
+        <artifactId>ponder-quota-todo-common</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.pquota</groupId>
+        <artifactId>ponder-quota-todo-domain</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.pquota</groupId>
+        <artifactId>ponder-quota-todo-infrastructure</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.pquota</groupId>
+        <artifactId>ponder-quota-todo-interface</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.pquota</groupId>
+        <artifactId>ponder-quota-todo-starter</artifactId>
+        <version>1.0.0</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

@@ -16,6 +16,16 @@
     <description>the infrastructure model and persistence module of the todo-list business center</description>
 
     <dependencies>
+        <!-- Project Modules -->
+        <dependency>
+            <groupId>io.github.pquota</groupId>
+            <artifactId>ponder-quota-todo-common</artifactId>
+        </dependency>
+        <!-- Development Tool -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

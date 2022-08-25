@@ -16,6 +16,11 @@
     <description>the domain model and service module of the todo-list business center</description>
 
     <dependencies>
+        <!-- Project Modules -->
+        <dependency>
+            <groupId>io.github.pquota</groupId>
+            <artifactId>ponder-quota-todo-infrastructure</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
