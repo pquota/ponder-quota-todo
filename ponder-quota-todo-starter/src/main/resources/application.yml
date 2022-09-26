@@ -1,6 +1,0 @@
-server:
-  port: 8191
-
-spring:
-  application:
-    name: ponder-quota-todo

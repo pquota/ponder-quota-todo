@@ -16,6 +16,30 @@
     <description>the interface api module of the todo-list business center</description>
 
     <dependencies>
+        <!-- Domain Driven Design -->
+        <dependency>
+            <groupId>io.github.ponderyao</groupId>
+            <artifactId>domain-driven-design-framework</artifactId>
+        </dependency>
+        <!-- Spring Cloud -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--  Development Tool -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- Project Framework Dependencies -->
+        <dependency>
+            <groupId>io.github.pquota</groupId>
+            <artifactId>ponder-quota-groundwork-common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

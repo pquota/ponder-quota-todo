@@ -16,15 +16,31 @@
     <description>the infrastructure model and persistence module of the todo-list business center</description>
 
     <dependencies>
-        <!-- Project Modules -->
+        <!-- Domain Driven Design -->
         <dependency>
-            <groupId>io.github.pquota</groupId>
-            <artifactId>ponder-quota-todo-common</artifactId>
+            <groupId>io.github.ponderyao</groupId>
+            <artifactId>domain-driven-design-framework</artifactId>
+        </dependency>
+        <!-- Database -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <!-- Development Tool -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        
+        <!-- Project Modules -->
+        <dependency>
+            <groupId>io.github.pquota</groupId>
+            <artifactId>ponder-quota-todo-common</artifactId>
         </dependency>
     </dependencies>
 
